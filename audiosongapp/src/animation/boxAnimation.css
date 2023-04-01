@@ -1,0 +1,14 @@
+.box-element {
+    background-color: rgba(168, 168, 168, 1);
+    animation: example 1s linear 1s infinite alternate;
+}
+
+@keyframes example {
+    from {
+        background-color: rgba(168, 168, 168, 0.5);
+    }
+
+    to {
+        background-color: rgba(168, 168, 168, 0.9);
+    }
+}
