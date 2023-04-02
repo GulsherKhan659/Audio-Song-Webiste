@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+    </header>
+    <main>
+        <div class="row">
+            <div class="offset-4 col-md-4">
+                <form class="mx-2" method="post" action="/asw/v1/admin" enctype="multipart/form-data">
+
+                    <div class="form-group mb-3">
+                        <h6 class="my-1">Title :</h6>
+                        <input type="text" class="form-control" name="title" />
+                    </div>
+                    <div class="form-group mb-3">
+                        <h6 class="my-1">Artist :</h6>
+                        <input type="text" class="form-control" name="artist" />
+                    </div>
+                    <div class="form-group mb3">
+                        <h6 class="my-1">Category :</h6>
+                        <select name="category" class="form-control" id="category">
+                            <option value="podcast">Podcast</option>
+                            <option value="romance">Romance</option>
+                            <option value="heartbreak">Heartbreak</option>
+                            <option value="friendship">Friendship</option>
+                            <option value="motivation">Motivation</option>
+                            <option value="Sufi">Sufi</option>
+                            <option value="Qawali">Qawali</option>
+                            <option value="patriotic">Patriotic</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb3">
+                        <h4 class="my-2">Upload Song</h4>
+                        <input type="file" name="audio" />
+                    </div>
+                    <div class="form-group mb3">
+                        <h4 class="my-2">Upload Cover</h4>
+                        <input type="file" name="img" />
+                    </div>
+                    <input type="submit" class="form-control btn btn-primary my-3" value="Upload Song" />
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

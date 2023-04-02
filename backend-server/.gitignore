@@ -1,1 +1,6 @@
 /node_modules
+
+# awsstorage is folder storage area for audio and image file 
+
+/public/aswstorage
+

@@ -1,14 +1,18 @@
 const express = require('express')
 
 const Controller = require('../controller/song')
+const img = require('../middleware/upload')
 
 const Routee = express.Router()
 
 
 Routee.get('/', Controller.getSong)
-    .post('/', Controller.addSong)
-    .patch('/:id', Controller.editSong)
-    .delete('/:id', Controller.delSong)
+Routee.post('/admin/', img.upload.fields([
+    { name: 'img', maxCount: 1 }, { name: 'audio', maxCount: 1 }
+]), Controller.addSong)
+Routee.delete('/admin/:id', Controller.delSong)
+Routee.patch('/admin/:id', Controller.editSong)
 
 
-exports.Song = Routee
+
+exports.route = Routee

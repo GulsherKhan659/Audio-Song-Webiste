@@ -26,7 +26,7 @@ function SearchPalete() {
 
     const SearchWaiting = () => idx.map((e, i) => {
         return (
-            <Grid item xs={3} key={i + e} >
+            <Grid item xs={3} key={i + e} paddingX={3.5} >
                 <Box className='box-element' marginX={3} height={140} marginY={1} >
                 </Box>
 

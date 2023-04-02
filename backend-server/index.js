@@ -1,17 +1,30 @@
 const express = require('express')
 const cors = require('cors')
 const mongoose = require('mongoose')
+const path = require('path');
 
-const rout = require('./router/song')
+
+const song = require('./router/song')
 
 const app = express()
 
+
 const PORT = process.env.PORT || 5000
+
+
+
+
 
 app.use(cors())
 app.use(express.json())
 
-app.use('/asw/v1/', rout.Song)
+app.use('/adminpanel', express.static(__dirname + '/public/'))
+
+app.use('/asw/v1/', song.route)
+
+
+
+
 main().catch(err => console.log(err));
 
 async function main() {
